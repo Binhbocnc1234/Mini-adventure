@@ -494,7 +494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -487.69}
+  m_AnchoredPosition: {x: 0, y: -324}
   m_SizeDelta: {x: 1351.04, y: 104.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223002596
@@ -517,10 +517,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "V\u01B0\u01A1ng qu\u1ED1c \u0111\u01B0\u1EE3c b\u1EA3o v\u1EC7 d\u01B0\u1EDBi
-    b\xE0n tay c\u1EE7a 3 v\u1ECB anh h\xF9ng: L\u1EA1c Long Qu\xE2n, Huy\u1EC1n
-    Tr\u1EA7n c\xF4ng ch\xFAa, t\u01B0\u01A1ng \u1EE9ng b\u1EA3o v\u1EC7 3 mi\u1EC1n
-    B\u1EAFc Trung Nam"
+  m_text: "The kingdom was protected by the hands of three heroes: Thanh Giong, L\u1EA1c
+    Long Qu\xE2n, Huy\u1EC1n Tr\u1EA7n C\xF4ng Ch\xFAa, who each defended one of
+    the three regions\u2014North, Central, and South."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -542,7 +541,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1262,10 +1261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScaleFactor: 0.2
+  m_ReferenceResolution: {x: 1893, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1547,7 +1546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -456.98}
+  m_AnchoredPosition: {x: 0, y: -364}
   m_SizeDelta: {x: 1057.78, y: 104.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963133605
@@ -1570,9 +1569,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Trong th\u1EDDi \u0111\u1EA1i lo\u1EA1n l\u1EA1c, th\u1EDDi \u0111\u1EA1i
-    \u0111\u1EA7y chi\u1EBFn tranh v\xE0 x\xE2m l\u0103ng, c\xF3 m\u1ED9t v\u01B0\u01A1ng
-    qu\u1ED1c t\xEAn l\xE0 L\u1EA1c Vi\u1EC7t "
+  m_text: "In an era of turmoil, a time filled with wars and invasions, there was
+    a kingdom called L\u1EA1c Vi\u1EC7t."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1594,7 +1592,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -2075,7 +2073,8 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 873192807109867477, guid: a74176b279163884d944c5329103240a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2175,7 +2174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1301664880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2649,7 +2648,8 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 873192807109867477, guid: a74176b279163884d944c5329103240a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2843,7 +2843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -411}
+  m_AnchoredPosition: {x: 0, y: -307}
   m_SizeDelta: {x: 1355.04, y: 162.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593781526
@@ -2866,10 +2866,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\u1EDDi nguy\u1EC1n kh\xF4ng chi l\xE0m 3 v\u1ECB anh h\xF9ng m\u1EA5t
-    \u0111i kh\u1EA3 n\u0103ng ki\xEAm so\xE1t b\u1EA3n th\xE2n m\xE0 c\xF2n khi\u1EBFn
-    s\u1EE9c m\u1EA1nh c\u1EE7a h\u1ECD th\xE0nh m\u1ED9t th\u1EBF l\u1EF1c t\xE0n
-    b\u1EA1o, ph\xE1 h\u1EE7y l\xE0ng m\u1EA1c, bi\xEAn tr\u1EDDi"
+  m_text: The curse not only stripped the three heroes of their ability to control
+    themselves, but also turned their powers into a brutal force, destroying villages
+    and ravaging the land.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bbaae3fba1d56a541abb6105ae696648, type: 2}
   m_sharedMaterial: {fileID: 4626211740608199228, guid: bbaae3fba1d56a541abb6105ae696648, type: 2}
@@ -2891,7 +2890,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -3055,7 +3054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -501}
+  m_AnchoredPosition: {x: 0, y: -387}
   m_SizeDelta: {x: 1235.14, y: 186.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638502504
@@ -3078,10 +3077,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nh\xE2n l\xFAc cu\u1ED9c chi\u1EBFn \u0111ang di\u1EC5n ra cam go nh\u1EA5t,
-    Th\u1EE7 l\u0129nh phe b\xF3ng t\u1ED1i \u0111\xE3 chu\u1ED1c l\u1EDDi nguy\u1EC1n
-    h\u1EAFc \xE1m l\xEAn 3 v\u1ECB anh h\xF9ng, bi\u1EBFn h\u1ECD th\xE0nh tay sai
-    c\u1EE7a m\xECnh"
+  m_text: In the midst of the fiercest battle, the leader of the dark forces cast
+    a dark curse upon the three heroes, turning them into his servants.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3103,7 +3100,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -3395,7 +3392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.96, y: -430}
+  m_AnchoredPosition: {x: -2.96, y: -323}
   m_SizeDelta: {x: 962.48, y: 76.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797485817
@@ -3418,8 +3415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nh\xE2n d\xE2n c\xF9ng 3 v\u1ECB th\u1EA7n \u0111\xE3 chi\u1EBFn \u0111\u1EA5u
-    r\u1EA5t anh d\u0169ng. "
+  m_text: The people, along with the three deities, fought bravely and valiantly.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3441,7 +3437,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -3862,7 +3858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -456.98}
+  m_AnchoredPosition: {x: 0, y: -325}
   m_SizeDelta: {x: 1057.78, y: 104.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143373427
@@ -3885,9 +3881,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "M\u1ED9t ng\xE0y kh\xF4ng may, th\u1EBF l\u1EF1c b\xF3ng t\u1ED1i \u0111\u1EBFn
-    t\u1EEB ph\u01B0\u01A1ng B\u1EAFc xu\u1EA5t hi\u1EC7n, \u0111i \u0111\u1EBFn
-    \u0111\xE2u ch\xFAng c\xE0n qu\xE9t v\xE0 t\u1EADn di\u1EC7t t\u1EDBi \u0111\xF3 "
+  m_text: One unfortunate day, the dark forces from the North appeared, sweeping
+    through wherever they went, leaving destruction and annihilation in their wake.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3909,7 +3904,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 97690656
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -4036,7 +4031,8 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 873192807109867477, guid: a74176b279163884d944c5329103240a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

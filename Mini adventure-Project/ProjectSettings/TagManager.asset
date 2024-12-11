@@ -39,9 +39,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 2599124983
     locked: 0
@@ -56,4 +53,13 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 4215743617
+    locked: 0
+  - name: Weapon
+    uniqueID: 2150015511
+    locked: 0
+  - name: UI
+    uniqueID: 3176407099
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0

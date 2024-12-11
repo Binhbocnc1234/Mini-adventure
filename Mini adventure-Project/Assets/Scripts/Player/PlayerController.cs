@@ -4,7 +4,9 @@ public enum PlayerState{
     Ground, // 0: player is in the ground
     Jumped, // 1 : player is jumping but aready performed double jump
     DoubleJump,  // 2: can perform double jump
-    Climb // 3: when player interacts with Ladder
+    Climb, // 3: when player interacts with Ladder
+    Attack,
+    None
 }
 public class PlayerController : Singleton<PlayerController>
 {
@@ -18,24 +20,27 @@ public class PlayerController : Singleton<PlayerController>
     // private bool isGrounded = false;     // Tracks if the player is on the ground
     public Animator animator;
     
-    
-    [HideInInspector] public PlayerState plState = 0; 
+    public PlayerState plState = 0, previousPlState = 0;
     private bool facingRight = true;
     private float horizontalInput;             // Horizontal movement input
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
     }
 
     private void Update()
     {
-        // Get horizontal input (A/D or Left/Right arrow keys)
+        // Movement: Get horizontal input (A/D or Left/Right arrow keys)
         horizontalInput = Input.GetAxisRaw("Horizontal");
         transform.Translate(new Vector3(horizontalInput*moveSpeed*Time.deltaTime, 0, 0));
         //Animation
-        if (plState == PlayerState.Jumped || plState == PlayerState.DoubleJump){
+        if (plState == PlayerState.Attack){
+            animator.Play("Attack");
+            animator.speed = GetComponent<Player>().primaryWeapon.atkSpeed;
+        }
+        else if (plState == PlayerState.Jumped || plState == PlayerState.DoubleJump){
             animator.Play("Jump");
         }
         else if(Mathf.Abs(horizontalInput) > 0.1f || plState == PlayerState.Climb){
@@ -44,8 +49,12 @@ public class PlayerController : Singleton<PlayerController>
         else{
             animator.Play("Idle");
         }
-        // Handle key W
-        if (Input.GetKeyDown(KeyCode.W)){
+        // Action : Attack, Jump, climb
+        if (Input.GetMouseButtonDown(0)){
+            plState = PlayerState.Attack;
+            
+        }
+        else if (Input.GetKeyDown(KeyCode.W)){
             if(plState == PlayerState.Ground || plState == PlayerState.DoubleJump){
                 Jump();
             }
@@ -57,10 +66,15 @@ public class PlayerController : Singleton<PlayerController>
                 rb.velocity = new Vector2(rb.velocity.x, 0);
             }
         }
-
+        else if (Input.GetKeyDown(KeyCode.S) && plState == PlayerState.Climb){
+            rb.velocity = new Vector2(rb.velocity.x, -climbSpeed);
+        }
         // Flip the player sprite based on movement direction
-        if (horizontalInput > 0 && !facingRight){Flip();}
-        else if (horizontalInput < 0 && facingRight){Flip();}
+        if (plState != PlayerState.Attack){
+            if (horizontalInput > 0 && !facingRight){Flip();}
+            else if (horizontalInput < 0 && facingRight){Flip();}
+        }
+        
     }
 
     private void FixedUpdate()
@@ -95,5 +109,19 @@ public class PlayerController : Singleton<PlayerController>
     }
     void OnCollisionExit2D(Collision2D other){
         plState = PlayerState.DoubleJump;
+    }
+    void OnCollisionStay2D(Collision2D other){
+        // Debug.Log("Ground");
+        ChangeState(PlayerState.Ground);
+    }
+    ///<summary> Player cannot change State when he/she is in Attack state </summary>
+    public void ChangeState(PlayerState plState){
+        if (this.plState != PlayerState.Attack){
+            if (this.plState != plState){
+                Debug.Log($"Change state from {this.plState} to {plState}");
+                this.plState = plState;
+            }
+            
+        }
     }
 }
